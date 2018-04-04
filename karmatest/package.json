@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-web-app1",
+  "version": "0.0.0",
+  "description": "NodejsWebApp1",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config test.webpack.conf.js",
+    "test": "karma start karma.conf.js"
+  },
+  "author": {
+    "name": "masaki.goto"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-typescript": "^3.0.12",
+    "typescript": "^2.7.2"
+  }
+}
