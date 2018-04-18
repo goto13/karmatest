@@ -4,10 +4,6 @@
 module test {
 	"use strict";
 
-	var global: any = {};
-	global.diva = global.diva || {};
-	global.diva.Plus = require('../src/addtest.js');
-
 	var plus= new diva.Plus();
 	describe('test: add', () => {
 		it('add two to one', () => {
