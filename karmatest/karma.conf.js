@@ -21,7 +21,7 @@ module.exports = function (config) {
 
 
 		// list of files / patterns to exclude
-		exclude: [
+		exclude:  [
 			'src/add.js',
 			'src/index.js',
 			'test/add.spec.js',
