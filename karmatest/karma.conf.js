@@ -10,27 +10,29 @@ module.exports = function (config) {
 
 		// frameworks to use
 		// available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-		frameworks: ['jasmine', 'karma-typescript'],
+		frameworks: ['jasmine', 'karma-typescript', 'browserify'],
 
 
 		// list of files / patterns to load in the browser
 		files: [
-			'src/**/*.ts',
-			'test/**/*.ts'
+			'src/**/*.js',
+			'test/**/*.js'
 		],
 
 
 		// list of files / patterns to exclude
 		exclude: [
-			'src/**/*.d.ts',
-			'test/**/*.d.ts'
+			'src/add.js',
+			'src/index.js',
+			'test/add.spec.js',
+			'test/index.spec.js',
 		],
 
 
 		// preprocess matching files before serving them to the browser
 		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
 		preprocessors: {
-			'**/*.ts': 'karma-typescript'
+			'test/**/*.js': ['browserify']
 		},
 
 
